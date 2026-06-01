@@ -45,4 +45,5 @@ git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-package
 cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
 rm -rf OpenClash-packages
 
+git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
