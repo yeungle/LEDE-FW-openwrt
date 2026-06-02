@@ -23,6 +23,26 @@ rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/packages/net/adguardhome
 
 git clone --depth=1 https://github.com/fanchmwrt/fanchmwrt-packages fanchmwrt-packages
+cp -rf fanchmwrt-packages/luci-app-fwx-app-center package/luci-app-fwx-app-center
+luci-app-fwx-appfilter
+luci-app-fwx-dashboard-setting
+luci-app-fwx-dashboard
+luci-app-fwx-feature
+luci-app-fwx-mac-blacklist
+luci-app-fwx-macfilter
+luci-app-fwx-network
+luci-app-fwx-record-whitelist
+luci-app-fwx-record
+luci-app-fwx-resources
+luci-app-fwx-session-stat
+luci-app-fwx-system
+luci-app-fwx-user-record
+luci-app-fwx-user
+
+
+
+
+
 
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
 cp -rf kenzok8-packages/ddnsto package/ddnsto
