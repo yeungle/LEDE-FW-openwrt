@@ -32,6 +32,10 @@ cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 cp -rf kenzok8-packages/linkease package/linkease
 cp -rf kenzok8-packages/linkmount package/linkmount
 cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
+cp -rf kenzok8-packages/luci-app-vlmcsd package/luci-app-vlmcsd
+cp -rf kenzok8-packages/vlmcsd package/vlmcsd
+cp -rf kenzok8-packages/luci-app-vsftpd package/luci-app-vsftpd
+cp -rf kenzok8-packages/vsftpd package/vsftpd
 rm -rf kenzok8-packages
 
 #git clone --depth=1 https://github.com/fanchmwrt/fanchmwrt-packages fanchmwrt-packages
