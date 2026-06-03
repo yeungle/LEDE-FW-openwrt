@@ -34,23 +34,23 @@ cp -rf kenzok8-packages/linkmount package/linkmount
 cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
 rm -rf kenzok8-packages
 
-git clone --depth=1 https://github.com/fanchmwrt/fanchmwrt-packages fanchmwrt-packages
-cp -rf fanchmwrt-packages/luci-app-fwx-app-center package/luci-app-fwx-app-center
-cp -rf fanchmwrt-packages/luci-app-fwx-appfilter package/luci-app-fwx-appfilter
-cp -rf fanchmwrt-packages/luci-app-fwx-dashboard-setting package/luci-app-fwx-dashboard-setting
-cp -rf fanchmwrt-packages/luci-app-fwx-dashboard package/luci-app-fwx-dashboard
-cp -rf fanchmwrt-packages/luci-app-fwx-feature package/luci-app-fwx-feature
-cp -rf fanchmwrt-packages/luci-app-fwx-mac-blacklist package/luci-app-fwx-mac-blacklist
-cp -rf fanchmwrt-packages/luci-app-fwx-macfilter package/luci-app-fwx-macfilter
-cp -rf fanchmwrt-packages/luci-app-fwx-network package/luci-app-fwx-network
-cp -rf fanchmwrt-packages/luci-app-fwx-record-whitelist package/luci-app-fwx-record-whitelist
-cp -rf fanchmwrt-packages/luci-app-fwx-record package/luci-app-fwx-record
-cp -rf fanchmwrt-packages/luci-app-fwx-resources package/luci-app-fwx-resources
-cp -rf fanchmwrt-packages/luci-app-fwx-session-stat package/luci-app-fwx-session-stat
-cp -rf fanchmwrt-packages/luci-app-fwx-system package/luci-app-fwx-system
-cp -rf fanchmwrt-packages/luci-app-fwx-user-record package/luci-app-fwx-user-record
-cp -rf fanchmwrt-packages/luci-app-fwx-user package/luci-app-fwx-user
-rm -rf fanchmwrt-packages
+#git clone --depth=1 https://github.com/fanchmwrt/fanchmwrt-packages fanchmwrt-packages
+#cp -rf fanchmwrt-packages/luci-app-fwx-app-center package/luci-app-fwx-app-center
+#cp -rf fanchmwrt-packages/luci-app-fwx-appfilter package/luci-app-fwx-appfilter
+#cp -rf fanchmwrt-packages/luci-app-fwx-dashboard-setting package/luci-app-fwx-dashboard-setting
+#cp -rf fanchmwrt-packages/luci-app-fwx-dashboard package/luci-app-fwx-dashboard
+#cp -rf fanchmwrt-packages/luci-app-fwx-feature package/luci-app-fwx-feature
+#cp -rf fanchmwrt-packages/luci-app-fwx-mac-blacklist package/luci-app-fwx-mac-blacklist
+#cp -rf fanchmwrt-packages/luci-app-fwx-macfilter package/luci-app-fwx-macfilter
+#cp -rf fanchmwrt-packages/luci-app-fwx-network package/luci-app-fwx-network
+#cp -rf fanchmwrt-packages/luci-app-fwx-record-whitelist package/luci-app-fwx-record-whitelist
+#cp -rf fanchmwrt-packages/luci-app-fwx-record package/luci-app-fwx-record
+#cp -rf fanchmwrt-packages/luci-app-fwx-resources package/luci-app-fwx-resources
+#cp -rf fanchmwrt-packages/luci-app-fwx-session-stat package/luci-app-fwx-session-stat
+#cp -rf fanchmwrt-packages/luci-app-fwx-system package/luci-app-fwx-system
+#cp -rf fanchmwrt-packages/luci-app-fwx-user-record package/luci-app-fwx-user-record
+#cp -rf fanchmwrt-packages/luci-app-fwx-user package/luci-app-fwx-user
+#rm -rf fanchmwrt-packages
 
 git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
 cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
