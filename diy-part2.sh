@@ -52,6 +52,10 @@ cp -rf fanchmwrt-packages/luci-app-fwx-user-record package/luci-app-fwx-user-rec
 cp -rf fanchmwrt-packages/luci-app-fwx-user package/luci-app-fwx-user
 rm -rf fanchmwrt-packages
 
+git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
+cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
+rm -rf OpenClash-packages
+
 
 
 
