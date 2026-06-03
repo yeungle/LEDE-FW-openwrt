@@ -19,8 +19,29 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
+sed -i "s/^VERSION_NUMBER:=.*/VERSION_NUMBER:=25.12-$(date +%Y%m%d)/" include/version.mk
+
 rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/packages/net/adguardhome
+
+git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
+cp -rf kenzok8-packages/ddnsto package/ddnsto
+cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
+cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
+cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
+cp -rf kenzok8-packages/adguardhome package/adguardhome
+cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+cp -rf kenzok8-packages/fastnet package/fastnet
+cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
+cp -rf kenzok8-packages/linkease package/linkease
+cp -rf kenzok8-packages/linkmount package/linkmount
+cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
+cp -rf kenzok8-packages/luci-app-oaf package/luci-app-oaf
+cp -rf kenzok8-packages/oaf package/oaf
+cp -rf kenzok8-packages/open-app-filter package/open-app-filter
+rm -rf kenzok8-packages
+
+git clone --depth=1 -b openwrt-23.05 https://github.com/coolsnowwolf/luci package/luci-app-accesscontrol
 
 git clone --depth=1 https://github.com/fanchmwrt/fanchmwrt-packages fanchmwrt-packages
 cp -rf fanchmwrt-packages/luci-app-fwx-app-center package/luci-app-fwx-app-center
@@ -40,23 +61,8 @@ cp -rf fanchmwrt-packages/luci-app-fwx-user-record package/luci-app-fwx-user-rec
 cp -rf fanchmwrt-packages/luci-app-fwx-user package/luci-app-fwx-user
 rm -rf fanchmwrt-packages
 
-git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
-cp -rf kenzok8-packages/ddnsto package/ddnsto
-cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
-cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
-cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
-cp -rf kenzok8-packages/adguardhome package/adguardhome
-cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
-cp -rf kenzok8-packages/fastnet package/fastnet
-cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
-cp -rf kenzok8-packages/linkease package/linkease
-cp -rf kenzok8-packages/linkmount package/linkmount
-cp -rf kenzok8-packages/luci-app-linkease package/luci-app-linkease
-rm -rf kenzok8-packages
 
-git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
-cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
-rm -rf OpenClash-packages
+
 
 
 
